@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+    [Header("Movement")]
+
     public float moveSpeed;
 
     public Transform orientation;
@@ -36,11 +37,13 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticaleInput = Input.GetAxisRaw("Vertical");
+
+
     }
 
     private void MovePlayer()
     {
-        moveDirection = orientation.forward * verticaleInput + orientation.right * horizontalInput;
+        moveDirection = orientation.forward * horizontalInput + orientation.right * verticaleInput;
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f,ForceMode.Force);
     }
 }
