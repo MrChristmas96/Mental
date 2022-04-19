@@ -6,12 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Hallway0.unity
+    guid: 00f805e637e69084ca725c1f01563cfa
+  - enabled: 1
     path: Assets/Scenes/Hallway1.unity
     guid: 36b3b55dec4f40e44b150f930c5f983e
   - enabled: 1
     path: Assets/Scenes/Hallway2.unity
-    guid: 6efbb65f3be85554f8ae8c52d962c0fe
+    guid: 5cba2fb15e162bf478bc6a28d9d44ba1
   - enabled: 1
     path: Assets/Scenes/Hallway3.unity
-    guid: 7870e811d257e76459d921d0c1e865ca
+    guid: eaba747d311bf8145af11e1d272bbcbe
+  - enabled: 1
+    path: Assets/Scenes/Hallway4.unity
+    guid: 6684bc3eb97eb5f4f99c0f494bf19d24
+  - enabled: 1
+    path: Assets/Scenes/Hallway5.unity
+    guid: 614830054edf90b498528ebbf5c80385
+  - enabled: 1
+    path: Assets/Scenes/Hallway6.unity
+    guid: 0564274b7e99b5e47b7f1725fc140a13
   m_configObjects: {}
