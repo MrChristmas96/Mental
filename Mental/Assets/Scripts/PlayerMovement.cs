@@ -64,7 +64,12 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticaleInput = Input.GetAxisRaw("Vertical");
-
+        
+        if(moveDirection.x <0 || moveDirection.x > 0|| moveDirection.y < 0 || moveDirection.y > 0|| moveDirection.z < 0 || moveDirection.z > 0)
+        
+            if (!isWalking)
+                WalkingSound();
+        
 
     }
 
