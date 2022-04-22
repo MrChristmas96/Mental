@@ -23,7 +23,6 @@ public class DoorController : MonoBehaviour
         else
         {
             DoorAnim.Play("DoorClose", 0, 0.0f);
-            Debug.Log("fuck");
             DoorOpen = false;
         }
     }
