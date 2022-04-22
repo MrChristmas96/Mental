@@ -5820,7 +5820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1174431968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11628,10 +11628,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1583810890, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583810890, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: field of view
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: crosshair
       value: 
-      objectReference: {fileID: 431617262}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: rayLength
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: OpenDoorKey
       value: 32
