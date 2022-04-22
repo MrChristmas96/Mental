@@ -56,11 +56,11 @@ public class DoorRaycast : MonoBehaviour
     {
         if(on && !doOnce)
         {
-            crosshair.color = Color.red;
+            crosshair.color = Color.white;
         }
         else
         {
-            crosshair.color = Color.white;
+            crosshair.color = Color.black;
             isCrossHairActive = false;
         }
     }
