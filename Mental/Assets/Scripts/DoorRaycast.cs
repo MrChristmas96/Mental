@@ -40,6 +40,10 @@ public class DoorRaycast : MonoBehaviour
             }
 
         }
+        else
+        {
+            doOnce = false;
+        }
         /*
         else 
         {
