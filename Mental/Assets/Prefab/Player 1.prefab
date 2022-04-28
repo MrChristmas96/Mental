@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583810887}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1729492508}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!20 &1583810890
 Camera:
   m_ObjectHideFlags: 0
@@ -60,7 +60,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 26.991467
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -126,7 +126,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   exLayerName: 
-  OpenDoorKey: 101
+  OpenDoorKey: 32
   crosshair: {fileID: 0}
 --- !u!1 &1729492506
 GameObject:
@@ -152,14 +152,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729492506}
-  m_LocalRotation: {x: -0, y: -0.70499116, z: -0, w: 0.7092162}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1583810888}
   m_Father: {fileID: 4567010864190401327}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -89.658, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &1729492507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
   walking: {fileID: 0}
   isWalking: 0
   walkingTimer: 1
-  moveSpeed: 1.1
+  moveSpeed: 1.5
   groundDrag: 5
   PlayerHeight: 2
   WhatIsGround:
