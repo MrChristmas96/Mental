@@ -1530,11 +1530,11 @@ PrefabInstance:
     - target: {fileID: 1008152426, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: OpenDoor
       value: 
-      objectReference: {fileID: 1473028617}
+      objectReference: {fileID: 1473028616}
     - target: {fileID: 1008152426, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: CloseDoor
       value: 
-      objectReference: {fileID: 1473028616}
+      objectReference: {fileID: 1473028617}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
 --- !u!1001 &175353616
@@ -6366,7 +6366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144819879}
   m_LocalRotation: {x: -0, y: -0.69446963, z: -0, w: 0.71952206}
-  m_LocalPosition: {x: 4.85, y: 1.27, z: -1.65}
+  m_LocalPosition: {x: 4.49, y: 1.27, z: 2.87}
   m_LocalScale: {x: 0.82944083, y: 1.9617, z: 2.3528}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8432,7 +8432,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b475429688f96b74db1139812aa2e994, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 121da4f07cd17e44595e833658c3bace, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8442,8 +8442,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 1.03
+  MaxDistance: 4.31
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -8528,7 +8528,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 121da4f07cd17e44595e833658c3bace, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b475429688f96b74db1139812aa2e994, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11941,13 +11941,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931437588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.767, y: 1.25, z: -1.514}
+  m_LocalRotation: {x: -0, y: 0.91298175, z: -0, w: 0.4080005}
+  m_LocalPosition: {x: 8.84, y: 1.25, z: -0.17}
   m_LocalScale: {x: 0.82944083, y: 1.9617, z: 2.3528}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 131.841, z: 0}
 --- !u!1001 &1933068183
 PrefabInstance:
   m_ObjectHideFlags: 0
