@@ -464,7 +464,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_Name
-      value: Door (1)
+      value: Door (3)
       objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
@@ -1469,7 +1469,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_Name
-      value: Door (1)
+      value: Door (4)
       objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
@@ -6016,7 +6016,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Door(5)
       objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
@@ -6289,12 +6289,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1144819879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41eebfc07d37b9f4280bd0b65da73d50, type: 3}
+  m_Script: {fileID: 11500000, guid: 44de2039427dd454fb264e82ed71837f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 0}
-  openTriger: 0
-  OpenDoor: {fileID: 0}
+  Door: {fileID: 1473028612}
+  openTriger2: 1
+  OpenDoor: {fileID: 1473028616}
+  Laugh: {fileID: 0}
 --- !u!65 &1144819881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6364,13 +6365,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144819879}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.767, y: 1.25, z: -1.514}
+  m_LocalRotation: {x: -0, y: -0.69446963, z: -0, w: 0.71952206}
+  m_LocalPosition: {x: 4.85, y: 1.27, z: -1.65}
   m_LocalScale: {x: 0.82944083, y: 1.9617, z: 2.3528}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -87.97, z: 0}
 --- !u!1001 &1154335853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7917,7 +7918,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 180882, guid: 42823df6e1b204a468f32120ecbe51f6, type: 3}
       propertyPath: m_Name
-      value: DoorWay (1)
+      value: DoorWay (3)
       objectReference: {fileID: 0}
     - target: {fileID: 459742, guid: 42823df6e1b204a468f32120ecbe51f6, type: 3}
       propertyPath: m_RootOrder
@@ -8414,6 +8415,11 @@ MeshFilter:
 --- !u!1 &1473028609 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
+  m_PrefabInstance: {fileID: 156499073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1473028612 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1008152425, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
   m_PrefabInstance: {fileID: 156499073}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1473028616
@@ -11865,6 +11871,7 @@ MonoBehaviour:
   Door: {fileID: 1713400741}
   openTriger: 1
   OpenDoor: {fileID: 1713400747}
+  Laugh: {fileID: 0}
 --- !u!65 &1931437590
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12644,7 +12651,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_Name
-      value: Door (1)
+      value: Door (2)
       objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder

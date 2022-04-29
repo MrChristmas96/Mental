@@ -6,7 +6,8 @@ public class Trigger : MonoBehaviour
 {
     [SerializeField] private Animator Door = null;
     [SerializeField] private bool openTriger = false;
-    public AudioSource OpenDoor;
+    [SerializeField] AudioSource OpenDoor;
+    public AudioSource Laugh;
 
 
     private void OnTriggerEnter(Collider other)
@@ -18,9 +19,10 @@ public class Trigger : MonoBehaviour
                 Debug.Log("2");
                 Door.Play("DoorOpen",0 , 0.0f);
                 OpenDoor.Play();
-            gameObject.SetActive(false);
+                gameObject.SetActive(false);
             }
         
         
     }
+    
 }
