@@ -55,9 +55,9 @@ public class DoorRaycast : MonoBehaviour
                 if (!doOnce)
                 {
                     raycastObj = hit.collider.gameObject.GetComponent<DoorController>();
-                    CrosshairChange(true);
+                    //CrosshairChange(true);
                 }
-                isCrossHairActive = true;
+                //isCrossHairActive = true;
                 doOnce = true;
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
@@ -71,7 +71,6 @@ public class DoorRaycast : MonoBehaviour
             {
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
-                    raycastObj.PlayAnimation();
                     Debug.Log("Loaded scene" + gameMaster.loopCount);
                     gameMaster.loadScene("Hallway");
                 }

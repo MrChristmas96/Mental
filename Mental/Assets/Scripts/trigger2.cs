@@ -22,14 +22,14 @@ public class Trigger2 : MonoBehaviour
             Door.Play("DoorOpen", 0, 0.0f);
             OpenDoor.Play();
             gameObject.SetActive(false);
-            Laugh();
+           // Laugh();
 
             
         }
 
 
     }
-
+    /*
     private Coroutine()
     {
 
@@ -43,6 +43,6 @@ public class Trigger2 : MonoBehaviour
 
         yield return WaitForSeconds(2);
     }
-
+    */
 }
 
