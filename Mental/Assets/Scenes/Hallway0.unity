@@ -5304,6 +5304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
+      propertyPath: m_TagString
+      value: OfficeDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7056,6 +7060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door(5)
       objectReference: {fileID: 0}
+    - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
+      propertyPath: m_TagString
+      value: LoopDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7754,7 +7762,7 @@ GameObject:
   - component: {fileID: 1192870217}
   - component: {fileID: 1192870216}
   - component: {fileID: 1192870215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12027,7 +12035,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1721824134}
-  - component: {fileID: 1721824133}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -15308,6 +15315,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1583810891, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: mouseSenX
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583810891, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: mouseSenY
+      value: 300
     - target: {fileID: 1583810890, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: orthographic
       value: 0
@@ -15320,9 +15334,9 @@ PrefabInstance:
       propertyPath: crosshair
       value:
       objectReference: {fileID: 431617262}
-    - target: {fileID: 811052087048340871, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: m_Radius
-      value: 0.2
+    - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: OpenDoorKey
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: rayLength
