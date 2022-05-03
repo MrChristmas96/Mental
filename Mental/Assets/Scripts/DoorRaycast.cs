@@ -38,9 +38,9 @@ public class DoorRaycast : MonoBehaviour
                 if (!doOnce)
                 {
                     raycastObj = hit.collider.gameObject.GetComponent<DoorController>();
-                    CrosshairChange(true);
+                   /* CrosshairChange(true);*/
                 }
-                isCrossHairActive = true;
+               /* isCrossHairActive = true;*/
                 doOnce = true;
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
@@ -55,9 +55,9 @@ public class DoorRaycast : MonoBehaviour
                 if (!doOnce)
                 {
                     raycastObj = hit.collider.gameObject.GetComponent<DoorController>();
-                    CrosshairChange(true);
+                    //CrosshairChange(true);
                 }
-                isCrossHairActive = true;
+                //isCrossHairActive = true;
                 doOnce = true;
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
@@ -71,25 +71,28 @@ public class DoorRaycast : MonoBehaviour
             {
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
-                    raycastObj.PlayAnimation();
                     Debug.Log("Loaded scene" + gameMaster.loopCount);
                     gameMaster.loadScene("Hallway");
                 }
             }
 
         }
-
         else
+        {
+            doOnce = false;
+        }
+        /*
+        else 
         {
             if (isCrossHairActive)
             {
                 CrosshairChange(false);
                 doOnce = false;
             }
-        }
+        }*/
     }
 
-
+    /*
     void CrosshairChange(bool on)
     {
         if(on && !doOnce)
@@ -101,5 +104,5 @@ public class DoorRaycast : MonoBehaviour
             crosshair.color = Color.black;
             isCrossHairActive = false;
         }
-    }
+    }*/
 }
