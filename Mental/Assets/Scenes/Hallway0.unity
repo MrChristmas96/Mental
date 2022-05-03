@@ -936,17 +936,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde8a13cf459a104c9687d1fa115fb85, type: 3}
---- !u!114 &104687647 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1684290137517772092, guid: bde8a13cf459a104c9687d1fa115fb85, type: 3}
-  m_PrefabInstance: {fileID: 104687646}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d43a61c77c6e6654c8895a3f0c3605d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &114740248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4946,6 +4935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
+      propertyPath: m_TagString
+      value: OfficeDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6444,6 +6437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
+      propertyPath: m_TagString
+      value: LoopDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7021,7 +7018,7 @@ GameObject:
   - component: {fileID: 1192870217}
   - component: {fileID: 1192870216}
   - component: {fileID: 1192870215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10693,7 +10690,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1721824134}
-  - component: {fileID: 1721824133}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -10701,19 +10697,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1721824133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721824132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa5de939aef36724e9369d3269a018f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameMaster: {fileID: 104687647}
 --- !u!4 &1721824134
 Transform:
   m_ObjectHideFlags: 0
@@ -13648,13 +13631,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1583810891, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: mouseSenX
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583810891, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: mouseSenY
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 431617262}
-    - target: {fileID: 811052087048340871, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: m_Radius
-      value: 0.2
+    - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: OpenDoorKey
+      value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 4567010864190401326, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: m_Name
