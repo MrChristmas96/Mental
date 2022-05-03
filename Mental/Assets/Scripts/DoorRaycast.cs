@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class DoorRaycast : MonoBehaviour
 {
+    [SerializeField] private GM gameMaster;
+    private RoomGenerator roomGenerator;
+
     [SerializeField] private int rayLength = 5;
     [SerializeField] private LayerMask LayerMask;
     [SerializeField] private string exLayerName = null;
@@ -16,7 +19,13 @@ public class DoorRaycast : MonoBehaviour
     private bool doOnce;
 
     private const string InterActableTag = "InteractiveObject";
-
+    private const string LoopDoor = "LoopDoor";
+    private const string OfficeDoor = "OfficeDoor";
+    private void Awake()
+    {
+        gameMaster =  FindObjectOfType<GM>();
+        roomGenerator = gameMaster.GetComponent<RoomGenerator>();
+    }
     private void Update()
     {
         RaycastHit hit;
@@ -36,6 +45,35 @@ public class DoorRaycast : MonoBehaviour
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
                     raycastObj.PlayAnimation();
+
+                }
+            }
+            //Generate new rooms when opening Office Door
+            else if (hit.collider.CompareTag(OfficeDoor))
+            {
+                
+                if (!doOnce)
+                {
+                    raycastObj = hit.collider.gameObject.GetComponent<DoorController>();
+                    CrosshairChange(true);
+                }
+                isCrossHairActive = true;
+                doOnce = true;
+                if (Input.GetKeyDown(OpenDoorKey))
+                {
+                    roomGenerator.CreateRoom();
+                    raycastObj.PlayAnimation();
+
+                }
+            }
+            //Loop next Scene
+            else if (hit.collider.CompareTag(LoopDoor))
+            {
+                if (Input.GetKeyDown(OpenDoorKey))
+                {
+                    raycastObj.PlayAnimation();
+                    Debug.Log("Loaded scene" + gameMaster.loopCount);
+                    gameMaster.loadScene("Hallway");
                 }
             }
 
