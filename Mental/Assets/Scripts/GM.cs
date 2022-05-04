@@ -9,9 +9,15 @@ public class GM : MonoBehaviour
 
     private static GM _instance;
 
+    [SerializeField] private bool foundKey = false;
+
+    public PickupController pickupController;
+
+
 
     private void Awake()
     {
+
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -21,20 +27,25 @@ public class GM : MonoBehaviour
             _instance = this;
         }
     }
-    void Start()
-    {
-        
-    }
 
-    
-    void Update()
+    public void PickedUp()
     {
-        
+        pickupController.PickUpKeyCard();
+        foundKey = true;
     }
 
     public void loadScene(string name)
     {
-        loopCount++;
-        SceneManager.LoadScene(name + loopCount);
+        if (foundKey)
+        {
+            loopCount++;
+            SceneManager.LoadScene(name + loopCount);
+            foundKey = false;
+        }
+        else
+        {
+            Debug.Log("Door is Locked");
+        }
+        
     }
 }

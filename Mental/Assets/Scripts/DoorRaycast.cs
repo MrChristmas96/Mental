@@ -8,7 +8,7 @@ public class DoorRaycast : MonoBehaviour
     [SerializeField] private GM gameMaster;
     private RoomGenerator roomGenerator;
 
-    [SerializeField] private int rayLength = 5;
+    [SerializeField] private int rayLength = 7;
     [SerializeField] private LayerMask LayerMask;
     [SerializeField] private string exLayerName = null;
 
@@ -21,6 +21,7 @@ public class DoorRaycast : MonoBehaviour
     private const string InterActableTag = "InteractiveObject";
     private const string LoopDoor = "LoopDoor";
     private const string OfficeDoor = "OfficeDoor";
+    private const string Pickup = "Pickup";
     private void Awake()
     {
         gameMaster =  FindObjectOfType<GM>();
@@ -74,6 +75,16 @@ public class DoorRaycast : MonoBehaviour
                     Debug.Log("Loaded scene" + gameMaster.loopCount);
                     gameMaster.loadScene("Hallway");
                 }
+            }
+            //Pickup items
+            else if (hit.collider.CompareTag(Pickup))
+            {
+                if (Input.GetKeyDown(OpenDoorKey))
+                {
+                    gameMaster.PickedUp();
+                    Debug.Log("Pickup KeyCard");
+                }
+               
             }
 
         }
