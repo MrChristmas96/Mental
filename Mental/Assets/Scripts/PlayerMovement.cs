@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     public float moveSpeed;
+    private float baseMoveSpeed;
     public float groundDrag;
 
 
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
      private void Start()
     {
+        baseMoveSpeed = moveSpeed;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         walking = GetComponent<WalkingSound>();
@@ -51,8 +53,15 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = 0;
 
 
+        if (Input.GetKeyDown("left shift"))
+        {
+            moveSpeed = moveSpeed * 2;
+        }
+        else if (Input.GetKeyUp("left shift"))
+        {
+            moveSpeed = baseMoveSpeed;
+        }
 
-        
 
     }
     private void FixedUpdate()
