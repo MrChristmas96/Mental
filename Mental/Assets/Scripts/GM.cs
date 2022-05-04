@@ -9,6 +9,8 @@ public class GM : MonoBehaviour
 
     private static GM _instance;
 
+    [SerializeField] private bool foundKey = false;
+
 
     private void Awake()
     {
@@ -32,9 +34,22 @@ public class GM : MonoBehaviour
         
     }
 
+    public void PickedUp()
+    {
+        foundKey = true;
+    }
+
     public void loadScene(string name)
     {
-        loopCount++;
-        SceneManager.LoadScene(name + loopCount);
+        if (foundKey)
+        {
+            loopCount++;
+            SceneManager.LoadScene(name + loopCount);
+        }
+        else
+        {
+            Debug.Log("You need to find the key");
+        }
+        
     }
 }
