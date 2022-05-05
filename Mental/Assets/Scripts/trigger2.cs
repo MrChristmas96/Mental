@@ -14,7 +14,7 @@ public class Trigger2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
+        
         
             Debug.Log("3");
             
