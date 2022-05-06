@@ -7,7 +7,7 @@ public class Trigger : MonoBehaviour
     [SerializeField] private Animator Door = null;
     [SerializeField] private bool openTriger = false;
     [SerializeField] AudioSource OpenDoor;
-    public AudioSource Laugh;
+   
 
 
     private void OnTriggerEnter(Collider other)
