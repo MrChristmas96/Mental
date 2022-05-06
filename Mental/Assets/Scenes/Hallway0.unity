@@ -7568,7 +7568,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44de2039427dd454fb264e82ed71837f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Laughs: {fileID: 0}
 --- !u!65 &1144819881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13224,12 +13223,12 @@ GameObject:
   - component: {fileID: 1839942974}
   - component: {fileID: 1839942973}
   m_Layer: 5
-  m_Name: KeyCard
+  m_Name: KeyCardUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1839942972
 RectTransform:
   m_ObjectHideFlags: 0
