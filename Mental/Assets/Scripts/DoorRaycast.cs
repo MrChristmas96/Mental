@@ -24,6 +24,7 @@ public class DoorRaycast : MonoBehaviour
     private const string Pickup = "Pickup";
     private void Awake()
     {
+        crosshair.gameObject.SetActive(false);
         gameMaster =  FindObjectOfType<GM>();
         roomGenerator = gameMaster.GetComponent<RoomGenerator>();
     }
@@ -112,11 +113,13 @@ public class DoorRaycast : MonoBehaviour
     {
         if(on && !doOnce)
         {
-            crosshair.color = Color.green;
+            crosshair.gameObject.SetActive(true);
+            crosshair.color = Color.white;
         }
         else
         {
-            crosshair.color = Color.white;
+            crosshair.gameObject.SetActive(false);
+            
             isCrossHairActive = false;
         }
     }
