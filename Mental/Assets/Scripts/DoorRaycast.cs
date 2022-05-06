@@ -79,13 +79,19 @@ public class DoorRaycast : MonoBehaviour
             //Pickup items
             else if (hit.collider.CompareTag(Pickup))
             {
+                
+                CrosshairChange(true);
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
-                    CrosshairChange(true);
+                    CrosshairChange(false);
                     gameMaster.PickedUp();
                     Debug.Log("Pickup KeyCard");
                 }
                
+            }
+            else
+            {
+                CrosshairChange(false);
             }
 
         }
