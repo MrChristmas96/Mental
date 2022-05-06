@@ -39,9 +39,9 @@ public class DoorRaycast : MonoBehaviour
                 if (!doOnce)
                 {
                     raycastObj = hit.collider.gameObject.GetComponent<DoorController>();
-                   /* CrosshairChange(true);*/
+                    CrosshairChange(true);
                 }
-               /* isCrossHairActive = true;*/
+                isCrossHairActive = true;
                 doOnce = true;
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
@@ -56,9 +56,9 @@ public class DoorRaycast : MonoBehaviour
                 if (!doOnce)
                 {
                     raycastObj = hit.collider.gameObject.GetComponent<DoorController>();
-                    //CrosshairChange(true);
+                    CrosshairChange(true);
                 }
-                //isCrossHairActive = true;
+                isCrossHairActive = true;
                 doOnce = true;
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
@@ -81,6 +81,7 @@ public class DoorRaycast : MonoBehaviour
             {
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
+                    CrosshairChange(true);
                     gameMaster.PickedUp();
                     Debug.Log("Pickup KeyCard");
                 }
@@ -88,11 +89,8 @@ public class DoorRaycast : MonoBehaviour
             }
 
         }
-        else
-        {
-            doOnce = false;
-        }
-        /*
+
+        
         else 
         {
             if (isCrossHairActive)
@@ -100,20 +98,20 @@ public class DoorRaycast : MonoBehaviour
                 CrosshairChange(false);
                 doOnce = false;
             }
-        }*/
+        }
     }
 
-    /*
+    
     void CrosshairChange(bool on)
     {
         if(on && !doOnce)
         {
-            crosshair.color = Color.white;
+            crosshair.color = Color.green;
         }
         else
         {
-            crosshair.color = Color.black;
+            crosshair.color = Color.white;
             isCrossHairActive = false;
         }
-    }*/
+    }
 }
