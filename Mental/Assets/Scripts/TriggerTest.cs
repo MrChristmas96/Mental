@@ -3,26 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TriggerTest : MonoBehaviour
-{/*
-    private BoxCollider DoorOpen;
-    private BoxCollider Laugh;
+{
+    [SerializeField] private Animator Door = null;
+    [SerializeField] private bool openTriger = false;
+    [SerializeField] AudioSource OpenDoor;
+    [SerializeField] AudioSource Laugh;
+    [SerializeField] AudioSource Breath;
+    [SerializeField] AudioSource Laugh2;
 
-    void Start()
-    {
-        var colliders = GetComponents<BoxCollider>();
-        DoorOpen = colliders[0];
-        Laugh = colliders[1];
-    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (GetComponent<Collider>().IsTouching(DoorOpen))
+        if(gameObject.name == "trigggerDoor")
         {
-            Debug.Log("side");
+            Door.Play("DoorOpen", 0, 0.0f);
+            OpenDoor.Play();
+            gameObject.SetActive(false);  
         }
-        else if (GetComponent<Collider>().IsTouching(Laugh))
+
+        if(gameObject.name == "TriggerLaugh")
         {
-            Debug.Log("jump");
+            Laugh.Play();
+            gameObject.SetActive(false);
         }
-    }*/
+
+        if(gameObject.name == "TriggerBreath")
+        {
+            Breath.Play();
+            gameObject.SetActive(false);
+        }
+
+        if(gameObject.name == "TriggerLaugh2")
+        {
+            Laugh2.Play();
+            gameObject.SetActive(false);
+        }
+    }
+
 }
