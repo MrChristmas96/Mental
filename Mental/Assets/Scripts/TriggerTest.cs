@@ -10,10 +10,12 @@ public class TriggerTest : MonoBehaviour
     [SerializeField] AudioSource Laugh;
     [SerializeField] AudioSource Breath;
     [SerializeField] AudioSource Laugh2;
+    [SerializeField] AudioSource All;
 
 
     private void OnTriggerEnter(Collider other)
     {
+        gameObject.GetComponent<AudioSource>();
         if(gameObject.name == "trigggerDoor")
         {
             Door.Play("DoorOpen", 0, 0.0f);

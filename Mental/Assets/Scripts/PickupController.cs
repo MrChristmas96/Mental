@@ -18,7 +18,7 @@ public class PickupController : MonoBehaviour
         if (Input.GetKeyDown("e"))
         {
             
-            keycardUI.SetActive(false);
+            //keycardUI.SetActive(false);
         }
     }
     public void PickUpKeyCard()
