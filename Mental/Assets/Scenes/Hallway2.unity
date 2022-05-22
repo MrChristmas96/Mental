@@ -884,31 +884,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64281207}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &82399513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 179298, guid: 2fa97d29375bda64080d41087c0c107c, type: 3}
-  m_PrefabInstance: {fileID: 1863868482}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &82399514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82399513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d6950822b6e4e4c87da9d2e030a475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Door: {fileID: 0}
-  openTriger: 0
-  OpenDoor: {fileID: 0}
-  Laugh: {fileID: 0}
-  Breath: {fileID: 0}
-  Laugh2: {fileID: 0}
-  Boh: {fileID: 0}
-  lys: {fileID: 0}
 --- !u!1 &117500020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,7 +2462,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 308162420, guid: 242d926975dab6841b4e03bfd8d77915, type: 3}
-      propertyPath: lys
+      propertyPath: Lys
       value: 
       objectReference: {fileID: 364219121}
     - target: {fileID: 8490157424662272273, guid: 242d926975dab6841b4e03bfd8d77915, type: 3}
@@ -14720,7 +14695,6 @@ MonoBehaviour:
   Breath: {fileID: 0}
   Laugh2: {fileID: 0}
   Boh: {fileID: 0}
-  lys: {fileID: 0}
 --- !u!1001 &2064511854
 PrefabInstance:
   m_ObjectHideFlags: 0
