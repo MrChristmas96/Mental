@@ -11,7 +11,8 @@ public class TriggerTest : MonoBehaviour
     [SerializeField] AudioSource Breath;
     [SerializeField] AudioSource Laugh2;
     [SerializeField] AudioSource Boh;
- 
+    [SerializeField] GameObject lys;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -43,7 +44,9 @@ public class TriggerTest : MonoBehaviour
         if(gameObject.name == "Triggerbooh")
         {
             Boh.Play();
-            
+
+            lys.SetActive(true);
+
             gameObject.SetActive(false);
             
            
