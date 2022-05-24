@@ -11,6 +11,8 @@ public class TriggerTest : MonoBehaviour
     [SerializeField] AudioSource Breath;
     [SerializeField] AudioSource Laugh2;
     [SerializeField] AudioSource Boh;
+    [SerializeField] AudioSource uhyggeligt1;
+    [SerializeField] AudioSource uhyggeligt2;
     [SerializeField] GameObject lys;
 
 
@@ -50,6 +52,22 @@ public class TriggerTest : MonoBehaviour
             gameObject.SetActive(false);
             
            
+        }
+        if (gameObject.name == "trigger1")
+        {
+
+
+            gameObject.SetActive(false);
+
+
+        }
+        if (gameObject.name == "trigger2")
+        {
+
+
+            gameObject.SetActive(false);
+
+
         }
 
 

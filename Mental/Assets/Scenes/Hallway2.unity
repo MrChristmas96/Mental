@@ -2461,10 +2461,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 308162420, guid: 242d926975dab6841b4e03bfd8d77915, type: 3}
-      propertyPath: lightBulb
-      value: 
-      objectReference: {fileID: 1043037614}
     - target: {fileID: 8490157424662272273, guid: 242d926975dab6841b4e03bfd8d77915, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -6480,7 +6476,7 @@ MonoBehaviour:
   Breath: {fileID: 0}
   Laugh2: {fileID: 0}
   Boh: {fileID: 1973150812}
-  lightBulb: {fileID: 1216481569}
+  lys: {fileID: 0}
 --- !u!65 &1012316744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6906,11 +6902,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 464388, guid: 707c8e73e995723438a43fc2201d7493, type: 3}
   m_PrefabInstance: {fileID: 1024893573}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &1043037614 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 4151602712637431486, guid: 242d926975dab6841b4e03bfd8d77915, type: 3}
-  m_PrefabInstance: {fileID: 302783276}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1060979222
 PrefabInstance:
@@ -8411,11 +8402,6 @@ PrefabInstance:
 --- !u!4 &1216481568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 428016, guid: 2fa97d29375bda64080d41087c0c107c, type: 3}
-  m_PrefabInstance: {fileID: 1216481567}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &1216481569 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 10822452, guid: 2fa97d29375bda64080d41087c0c107c, type: 3}
   m_PrefabInstance: {fileID: 1216481567}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1242941833
@@ -14771,7 +14757,7 @@ MonoBehaviour:
   Breath: {fileID: 0}
   Laugh2: {fileID: 0}
   Boh: {fileID: 0}
-  lightBulb: {fileID: 0}
+  lys: {fileID: 0}
 --- !u!1001 &2064511854
 PrefabInstance:
   m_ObjectHideFlags: 0
