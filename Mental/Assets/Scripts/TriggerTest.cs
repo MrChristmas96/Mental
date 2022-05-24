@@ -53,9 +53,10 @@ public class TriggerTest : MonoBehaviour
             
            
         }
-        if (gameObject.name == "trigger1")
+        if (gameObject.name == "TriggerDoorKnock")
         {
-
+            
+            uhyggeligt1.Play();
 
             gameObject.SetActive(false);
 
@@ -64,7 +65,7 @@ public class TriggerTest : MonoBehaviour
         if (gameObject.name == "trigger2")
         {
 
-
+            uhyggeligt2.Play();
             gameObject.SetActive(false);
 
 
