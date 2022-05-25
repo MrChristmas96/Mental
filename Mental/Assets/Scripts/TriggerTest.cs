@@ -10,6 +10,10 @@ public class TriggerTest : MonoBehaviour
     [SerializeField] AudioSource Laugh;
     [SerializeField] AudioSource Breath;
     [SerializeField] AudioSource Laugh2;
+    [SerializeField] AudioSource Boh;
+    [SerializeField] AudioSource uhyggeligt1;
+    [SerializeField] AudioSource uhyggeligt2;
+    [SerializeField] GameObject lys;
 
 
     private void OnTriggerEnter(Collider other)
@@ -38,6 +42,37 @@ public class TriggerTest : MonoBehaviour
             Laugh2.Play();
             gameObject.SetActive(false);
         }
+
+        if(gameObject.name == "Triggerbooh")
+        {
+            Boh.Play();
+
+            lys.SetActive(true);
+
+            gameObject.SetActive(false);
+            
+           
+        }
+        if (gameObject.name == "TriggerDoorKnock")
+        {
+            
+            uhyggeligt1.Play();
+
+            gameObject.SetActive(false);
+
+
+        }
+        if (gameObject.name == "trigger2")
+        {
+
+            uhyggeligt2.Play();
+            gameObject.SetActive(false);
+
+
+        }
+
+
+
     }
 
 }

@@ -8,7 +8,7 @@ public class DoorRaycast : MonoBehaviour
     [SerializeField] private GM gameMaster;
     private RoomGenerator roomGenerator;
 
-    [SerializeField] private int rayLength = 7;
+    [SerializeField] private int rayLength = 1;
     [SerializeField] private LayerMask LayerMask;
     [SerializeField] private string exLayerName = null;
 
