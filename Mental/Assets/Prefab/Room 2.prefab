@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &308162419
 Transform:
   m_ObjectHideFlags: 0
@@ -115,6 +115,8 @@ MonoBehaviour:
   Breath: {fileID: 0}
   Laugh2: {fileID: 0}
   Boh: {fileID: 1873690601}
+  uhyggeligt1: {fileID: 0}
+  uhyggeligt2: {fileID: 0}
   lys: {fileID: 4151602712647746024}
 --- !u!1 &551401179
 GameObject:
@@ -723,6 +725,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 6ae120f8964c1514eaf762f4a73a438d, type: 3}
       propertyPath: m_Name
       value: DeadBody
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6ae120f8964c1514eaf762f4a73a438d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6ae120f8964c1514eaf762f4a73a438d, type: 3}
       propertyPath: m_RootOrder
