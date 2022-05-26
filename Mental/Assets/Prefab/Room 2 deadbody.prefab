@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2401208811609871347}
   m_Layer: 0
-  m_Name: Room deadbody
+  m_Name: Room 2 deadbody
   m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -50,8 +50,8 @@ MonoBehaviour:
   - {fileID: 0}
   rooms:
   - {fileID: 8354311315725049553, guid: e929b4f9e8350544d89540bfdbfa55d4, type: 3}
+  - {fileID: 2401208811609871348, guid: 50fd8f4f7bc86ec4c822204e3fa2aae6, type: 3}
   - {fileID: 0}
-  - {fileID: 5268122315489747841, guid: 700cebff95b53764385409d9c587af6e, type: 3}
 --- !u!114 &1684290137517772092
 MonoBehaviour:
   m_ObjectHideFlags: 0
