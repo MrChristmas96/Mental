@@ -60,7 +60,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 50
+  field of view: 61.4
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67006832761900e41bf7d94f0a324783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSenX: 200
-  mouseSenY: 200
+  mouseSenX: 300
+  mouseSenY: 300
   Orientation: {fileID: 4567010865121092268}
 --- !u!124 &1583810893
 Behaviour:
@@ -121,12 +121,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f484a5857e26fe41aff58a22295fda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 5
+  gameMaster: {fileID: 0}
+  rayLength: 1
   LayerMask:
     serializedVersion: 2
     m_Bits: 256
   exLayerName: 
-  OpenDoorKey: 32
+  OpenDoorKey: 101
   crosshair: {fileID: 0}
 --- !u!1 &1729492506
 GameObject:
@@ -152,14 +153,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729492506}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.6818629, z: -0, w: 0.73148006}
   m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1583810888}
   m_Father: {fileID: 4567010864190401327}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 85.979, z: 0}
 --- !u!114 &1729492507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +187,7 @@ GameObject:
   - component: {fileID: 4567010864190401325}
   - component: {fileID: 4567010864190401314}
   - component: {fileID: 4567010864190401315}
+  - component: {fileID: 1112991365}
   m_Layer: 7
   m_Name: Player 1
   m_TagString: Player
@@ -239,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2693b88d27e3be94eabfb092da61a8d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walking: {fileID: 0}
+  walking: {fileID: 4567010864190401315}
   isWalking: 0
   walkingTimer: 1
   moveSpeed: 1.5
@@ -361,6 +363,25 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 87d88fdf7fc1ec94794bbeeb1789d34d, type: 3}
   - {fileID: 8300000, guid: fc331af7870ef934ab860705e6aaf7cc, type: 3}
   audioSource: {fileID: 4567010864190401314}
+--- !u!95 &1112991365
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4567010864190401326}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4567010864366567264
 GameObject:
   m_ObjectHideFlags: 0

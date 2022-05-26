@@ -49,9 +49,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   rooms:
-  - {fileID: 3271063612101876837, guid: e929b4f9e8350544d89540bfdbfa55d4, type: 3}
-  - {fileID: 1515533795131431303, guid: 242d926975dab6841b4e03bfd8d77915, type: 3}
-  - {fileID: 3701395766335598238, guid: 700cebff95b53764385409d9c587af6e, type: 3}
+  - {fileID: 8354311315725049553, guid: e929b4f9e8350544d89540bfdbfa55d4, type: 3}
+  - {fileID: 2401208811609871348, guid: 50fd8f4f7bc86ec4c822204e3fa2aae6, type: 3}
+  - {fileID: 0}
 --- !u!114 &1684290137517772092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,4 +64,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d43a61c77c6e6654c8895a3f0c3605d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loopCount: 1
+  loopCount: 2
+  foundKey: 0
+  pickupController: {fileID: 0}
