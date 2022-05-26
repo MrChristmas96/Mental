@@ -14,6 +14,7 @@ public class TriggerTest : MonoBehaviour
     [SerializeField] AudioSource uhyggeligt1;
     [SerializeField] AudioSource uhyggeligt2;
     [SerializeField] GameObject lys;
+    [SerializeField] GameObject lys1;
 
 
     private void OnTriggerEnter(Collider other)
@@ -48,6 +49,7 @@ public class TriggerTest : MonoBehaviour
             Boh.Play();
 
             lys.SetActive(true);
+            lys1.SetActive(true);
 
             gameObject.SetActive(false);
             
