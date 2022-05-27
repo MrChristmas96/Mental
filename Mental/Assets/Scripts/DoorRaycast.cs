@@ -22,8 +22,11 @@ public class DoorRaycast : MonoBehaviour
     private const string LoopDoor = "LoopDoor";
     private const string OfficeDoor = "OfficeDoor";
     private const string Pickup = "Pickup";
+
+    [SerializeField] private GameObject pickupUI;
     private void Awake()
     {
+        pickupUI = GameObject.FindGameObjectWithTag("PickupUI");
         crosshair.gameObject.SetActive(false);
         gameMaster =  FindObjectOfType<GM>();
         roomGenerator = gameMaster.GetComponent<RoomGenerator>();

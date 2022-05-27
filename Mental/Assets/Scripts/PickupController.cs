@@ -5,25 +5,38 @@ using UnityEngine;
 public class PickupController : MonoBehaviour
 {
     [SerializeField] private GM gameMaster;
-    [SerializeField] private GameObject keycardUI;
-    [SerializeField] private GameObject keycard;
+    [SerializeField] private GameObject pickupUI;
+    [SerializeField] private GameObject pickup;
+    private bool showingPickUp;
 
     private void Start()
     {
         gameMaster = FindObjectOfType<GM>();
-        keycardUI.SetActive(false);
+        pickup = GameObject.FindGameObjectWithTag("Pickup");
+        pickupUI = GameObject.FindGameObjectWithTag("PickupUI");
+        pickupUI.SetActive(false);
     }
     private void Update()
     {
         if (Input.GetKeyDown("e"))
         {
+            if (showingPickUp)
+            {
+                pickupUI.SetActive(false);
+            }
             
-            keycardUI.SetActive(false);
         }
     }
-    public void PickUpKeyCard()
+    public void PickedUp()
     {
-        keycard.SetActive(false);
-        keycardUI.SetActive(true);
+        StartCoroutine(Wait());
+        pickup.SetActive(false);
+        pickupUI.SetActive(true);
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1f);
+        showingPickUp = true;
     }
 }

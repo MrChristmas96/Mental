@@ -9,6 +9,7 @@ TagManager:
   - LoopDoor
   - OfficeDoor
   - Pickup
+  - PickupUI
   layers:
   - Default
   - TransparentFX

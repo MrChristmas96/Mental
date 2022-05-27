@@ -30,7 +30,7 @@ public class GM : MonoBehaviour
 
     public void PickedUp()
     {
-        pickupController.PickUpKeyCard();
+        pickupController.PickedUp();
         foundKey = true;
     }
 
