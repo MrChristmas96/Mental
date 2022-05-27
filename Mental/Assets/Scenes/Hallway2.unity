@@ -6104,9 +6104,9 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 177787708215054796, guid: 02f5893c0028ae24fb2fc1d71b943715, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 7436110056011124464, guid: 02f5893c0028ae24fb2fc1d71b943715, type: 2}
     value: {fileID: 1788098704}
+  - key: {fileID: 7436110056011124464, guid: 02f5893c0028ae24fb2fc1d71b943715, type: 2}
+    value: {fileID: 1338059158}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &946425960
@@ -9852,6 +9852,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.0002005, y: 2.9978, z: 0.008300001}
   m_Center: {x: -1.5001019, y: 1.5013, z: 0.0030495236}
+--- !u!95 &1338059158 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 256203605, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+  m_PrefabInstance: {fileID: 1112991361}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1340406188
 PrefabInstance:
   m_ObjectHideFlags: 0
