@@ -8,6 +8,8 @@ public class DoorRaycast : MonoBehaviour
     [SerializeField] private GM gameMaster;
     private RoomGenerator roomGenerator;
 
+    [SerializeField] private PickupController pickupController;
+
     [SerializeField] private int rayLength = 1;
     [SerializeField] private LayerMask LayerMask;
     [SerializeField] private string exLayerName = null;
@@ -26,6 +28,7 @@ public class DoorRaycast : MonoBehaviour
     [SerializeField] private GameObject pickupUI;
     private void Awake()
     {
+        pickupController = gameMaster.GetComponent<PickupController>();
         pickupUI = GameObject.FindGameObjectWithTag("PickupUI");
         crosshair.gameObject.SetActive(false);
         gameMaster =  FindObjectOfType<GM>();
@@ -67,8 +70,8 @@ public class DoorRaycast : MonoBehaviour
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
                     roomGenerator.CreateRoom();
+                    pickupController.updatePickup();
                     raycastObj.PlayAnimation();
-
                 }
             }
             //Loop next Scene

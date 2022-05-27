@@ -18,6 +18,7 @@ public class PickupController : MonoBehaviour
     }
     private void Update()
     {
+        pickup = GameObject.FindGameObjectWithTag("Pickup");
         if (Input.GetKeyDown("e"))
         {
             if (showingPickUp)
@@ -38,5 +39,10 @@ public class PickupController : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         showingPickUp = true;
+    }
+
+    public void updatePickup()
+    {
+        pickup = GameObject.FindGameObjectWithTag("Pickup");
     }
 }

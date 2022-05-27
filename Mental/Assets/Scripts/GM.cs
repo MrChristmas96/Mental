@@ -17,7 +17,7 @@ public class GM : MonoBehaviour
 
     private void Awake()
     {
-
+        pickupController = GetComponent<PickupController>();
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
