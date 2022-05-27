@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1583810891}
   - component: {fileID: 1583810893}
   - component: {fileID: 1583810892}
+  - component: {fileID: 1154561438}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1729492508}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1583810890
 Camera:
   m_ObjectHideFlags: 0
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameMaster: {fileID: 0}
   pickupController: {fileID: 0}
-  rayLength: 1
+  rayLength: 2
   LayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -131,6 +132,25 @@ MonoBehaviour:
   OpenDoorKey: 101
   crosshair: {fileID: 0}
   pickupUI: {fileID: 0}
+--- !u!95 &1154561438
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583810887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1729492506
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +209,7 @@ GameObject:
   - component: {fileID: 4567010864190401325}
   - component: {fileID: 4567010864190401314}
   - component: {fileID: 4567010864190401315}
-  - component: {fileID: 1112991365}
+  - component: {fileID: 256203605}
   m_Layer: 7
   m_Name: Player 1
   m_TagString: Player
@@ -365,7 +385,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 87d88fdf7fc1ec94794bbeeb1789d34d, type: 3}
   - {fileID: 8300000, guid: fc331af7870ef934ab860705e6aaf7cc, type: 3}
   audioSource: {fileID: 4567010864190401314}
---- !u!95 &1112991365
+--- !u!95 &256203605
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
