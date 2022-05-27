@@ -13,11 +13,11 @@ public class GM : MonoBehaviour
 
     public PickupController pickupController;
 
-
+    [SerializeField] RoomGenerator roomGenerator;
 
     private void Awake()
     {
-
+        pickupController = GetComponent<PickupController>();
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -30,12 +30,13 @@ public class GM : MonoBehaviour
 
     public void PickedUp()
     {
-        pickupController.PickUpKeyCard();
+        pickupController.PickedUp();
         foundKey = true;
     }
 
     public void loadScene(string name)
     {
+
         if (foundKey)
         {
             loopCount++;

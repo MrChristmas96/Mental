@@ -452,6 +452,19 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!65 &1196989676
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6090348758353872273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3819868, y: 0.1029287, z: 0.10317411}
+  m_Center: {x: -0.051223166, y: 0.0022017458, z: -0.0014466428}
 --- !u!1001 &2401208811130418423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1584,6 +1597,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_KitchenRustyKnife
       objectReference: {fileID: 0}
+    - target: {fileID: 1289100062823888, guid: 3561d375b004832418eaf9271450e06f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289100062823888, guid: 3561d375b004832418eaf9271450e06f, type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4902080754245960, guid: 3561d375b004832418eaf9271450e06f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1630,6 +1651,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3561d375b004832418eaf9271450e06f, type: 3}
+--- !u!1 &6090348758353872273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1289100062823888, guid: 3561d375b004832418eaf9271450e06f, type: 3}
+  m_PrefabInstance: {fileID: 6089385118164553793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6089385118711310386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1703,14 +1729,14 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e3f04facfd9880f46a264f3d36ee18d7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae120f8964c1514eaf762f4a73a438d, type: 3}
---- !u!1 &6089385118711410322 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 6ae120f8964c1514eaf762f4a73a438d, type: 3}
-  m_PrefabInstance: {fileID: 6089385118711310386}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6089385118710919858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6ae120f8964c1514eaf762f4a73a438d, type: 3}
+  m_PrefabInstance: {fileID: 6089385118711310386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6089385118711410322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6ae120f8964c1514eaf762f4a73a438d, type: 3}
   m_PrefabInstance: {fileID: 6089385118711310386}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6089385119449090561
@@ -1968,13 +1994,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa97d29375bda64080d41087c0c107c, type: 3}
---- !u!4 &7862338454699798680 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 428016, guid: 2fa97d29375bda64080d41087c0c107c, type: 3}
-  m_PrefabInstance: {fileID: 7862338454699439976}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7862338454699526922 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 179298, guid: 2fa97d29375bda64080d41087c0c107c, type: 3}
+  m_PrefabInstance: {fileID: 7862338454699439976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7862338454699798680 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 428016, guid: 2fa97d29375bda64080d41087c0c107c, type: 3}
   m_PrefabInstance: {fileID: 7862338454699439976}
   m_PrefabAsset: {fileID: 0}
