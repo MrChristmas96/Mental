@@ -3213,7 +3213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 116412, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_TagString
-      value: OfficeDoor
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 479918, guid: 9c25864566bc2a7489bef25ecb47dd6c, type: 3}
       propertyPath: m_RootOrder
@@ -4671,6 +4671,7 @@ MonoBehaviour:
   uhyggeligt2: {fileID: 0}
   lys: {fileID: 0}
   lys1: {fileID: 0}
+  roomGenerator: {fileID: 0}
 --- !u!65 &635678522
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5593,6 +5594,7 @@ MonoBehaviour:
   uhyggeligt2: {fileID: 0}
   lys: {fileID: 0}
   lys1: {fileID: 0}
+  roomGenerator: {fileID: 2133800422}
 --- !u!65 &741012401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8424,6 +8426,7 @@ MonoBehaviour:
   uhyggeligt2: {fileID: 0}
   lys: {fileID: 0}
   lys1: {fileID: 0}
+  roomGenerator: {fileID: 0}
 --- !u!65 &1100804017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10065,6 +10068,7 @@ MonoBehaviour:
   uhyggeligt2: {fileID: 0}
   lys: {fileID: 0}
   lys1: {fileID: 0}
+  roomGenerator: {fileID: 0}
 --- !u!65 &1299305253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16283,3 +16287,14 @@ MonoBehaviour:
   gameMaster: {fileID: 0}
   pickupUI: {fileID: 0}
   pickup: {fileID: 0}
+--- !u!114 &2133800422 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1684290137517772035, guid: bde8a13cf459a104c9687d1fa115fb85, type: 3}
+  m_PrefabInstance: {fileID: 1529879110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133800420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846de9293ddb1844e8285dcb2cee66b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

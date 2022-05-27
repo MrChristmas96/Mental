@@ -13,7 +13,7 @@ public class GM : MonoBehaviour
 
     public PickupController pickupController;
 
-
+    [SerializeField] RoomGenerator roomGenerator;
 
     private void Awake()
     {
@@ -36,6 +36,7 @@ public class GM : MonoBehaviour
 
     public void loadScene(string name)
     {
+
         if (foundKey)
         {
             loopCount++;

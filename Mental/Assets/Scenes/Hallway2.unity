@@ -6512,6 +6512,7 @@ MonoBehaviour:
   uhyggeligt2: {fileID: 0}
   lys: {fileID: 0}
   lys1: {fileID: 0}
+  roomGenerator: {fileID: 0}
 --- !u!65 &1012316744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10086,11 +10087,11 @@ PrefabInstance:
     - target: {fileID: 1684290137517772035, guid: bde8a13cf459a104c9687d1fa115fb85, type: 3}
       propertyPath: rooms.Array.data[1]
       value: 
-      objectReference: {fileID: 2401208811609871348, guid: 50fd8f4f7bc86ec4c822204e3fa2aae6, type: 3}
+      objectReference: {fileID: 5268122315489747841, guid: 700cebff95b53764385409d9c587af6e, type: 3}
     - target: {fileID: 1684290137517772035, guid: bde8a13cf459a104c9687d1fa115fb85, type: 3}
       propertyPath: rooms.Array.data[2]
       value: 
-      objectReference: {fileID: 5268122315489747841, guid: 700cebff95b53764385409d9c587af6e, type: 3}
+      objectReference: {fileID: 2401208811609871348, guid: 50fd8f4f7bc86ec4c822204e3fa2aae6, type: 3}
     - target: {fileID: 1684290137517772035, guid: bde8a13cf459a104c9687d1fa115fb85, type: 3}
       propertyPath: roomABC.Array.data[0]
       value: 
@@ -14939,6 +14940,7 @@ MonoBehaviour:
   uhyggeligt2: {fileID: 0}
   lys: {fileID: 0}
   lys1: {fileID: 0}
+  roomGenerator: {fileID: 0}
 --- !u!1001 &2064511854
 PrefabInstance:
   m_ObjectHideFlags: 0

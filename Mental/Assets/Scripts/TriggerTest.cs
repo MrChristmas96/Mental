@@ -15,12 +15,14 @@ public class TriggerTest : MonoBehaviour
     [SerializeField] AudioSource uhyggeligt2;
     [SerializeField] GameObject lys;
     [SerializeField] GameObject lys1;
+    [SerializeField] RoomGenerator roomGenerator;
 
 
     private void OnTriggerEnter(Collider other)
     {
         if(gameObject.name == "trigggerDoor")
         {
+            roomGenerator.CreateRoom();
             Door.Play("DoorOpen", 0, 0.0f);
             OpenDoor.Play();
             gameObject.SetActive(false);  
