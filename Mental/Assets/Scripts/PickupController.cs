@@ -7,7 +7,9 @@ public class PickupController : MonoBehaviour
     [SerializeField] private GM gameMaster;
     [SerializeField] private GameObject pickupUI;
     [SerializeField] private GameObject pickup;
-    private bool showingPickUp;
+    public bool showingPickUp = false;
+
+    [SerializeField] private TextController textController;
 
     private void Start()
     {
@@ -21,7 +23,7 @@ public class PickupController : MonoBehaviour
         pickup = GameObject.FindGameObjectWithTag("Pickup");
         if (Input.GetKeyDown("e"))
         {
-            if (showingPickUp)
+            if (showingPickUp && pickupUI != null)
             {
                 pickupUI.SetActive(false);
             }
@@ -30,9 +32,52 @@ public class PickupController : MonoBehaviour
     }
     public void PickedUp()
     {
-        StartCoroutine(Wait());
-        pickup.SetActive(false);
-        pickupUI.SetActive(true);
+
+        if (gameMaster.loopCount == 0)
+        {
+
+            pickup.SetActive(false);
+            pickupUI.SetActive(true);
+            textController.StartCoroutine(textController.KeyCard());
+            StartCoroutine(Wait());
+        }
+        else if (gameMaster.loopCount == 1)
+        {
+
+            pickup.SetActive(false);
+            pickupUI.SetActive(true);
+            textController.StartCoroutine(textController.Paper());
+            StartCoroutine(Wait());
+        }
+        else if(gameMaster.loopCount == 2)
+        {
+            pickup.SetActive(false);
+            pickupUI.SetActive(true);
+            textController.StartCoroutine(textController.Knife());
+            StartCoroutine(Wait());
+        }
+        else if (gameMaster.loopCount == 3)
+        {
+            pickup.SetActive(false);
+            pickupUI.SetActive(true);
+            textController.StartCoroutine(textController.Death());
+            StartCoroutine(Wait());
+        }
+        else if (gameMaster.loopCount == 4)
+        {
+            pickup.SetActive(false);
+            pickupUI.SetActive(true);
+            textController.StartCoroutine(textController.Picture());
+            StartCoroutine(Wait());
+        }
+        else if (gameMaster.loopCount == 5)
+        {
+            pickup.SetActive(false);
+            pickupUI.SetActive(true);
+            textController.StartCoroutine(textController.Collection());
+            StartCoroutine(Wait());
+        }
+
     }
 
     IEnumerator Wait()
