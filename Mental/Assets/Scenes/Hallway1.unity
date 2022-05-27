@@ -1652,41 +1652,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &256203599 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4567010864190401326, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-  m_PrefabInstance: {fileID: 2099301076}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &256203600 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4567010864190401315, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-  m_PrefabInstance: {fileID: 2099301076}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256203599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde21f57a56e1354eab4fa8cd68b8fdc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &256203605
+--- !u!95 &256203605 stripped
 Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 256203605, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+  m_PrefabInstance: {fileID: 2099301076}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256203599}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &264837650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16826,66 +16796,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1583810890, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: orthographic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1583810890, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: field of view
-      value: 61.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1583810891, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: mouseSenX
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 1583810891, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: mouseSenY
-      value: 300
-      objectReference: {fileID: 0}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 651090428}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: rayLength
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: gameMaster
       value: 
       objectReference: {fileID: 374258608}
-    - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: OpenDoorKey
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729492508, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.73148006
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729492508, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729492508, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6818629
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729492508, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729492508, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 85.979
-      objectReference: {fileID: 0}
-    - target: {fileID: 4567010864190401325, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: walking
-      value: 
-      objectReference: {fileID: 256203600}
-    - target: {fileID: 4567010864190401325, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-      propertyPath: moveSpeed
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4567010864190401326, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: m_Name
       value: Player 1

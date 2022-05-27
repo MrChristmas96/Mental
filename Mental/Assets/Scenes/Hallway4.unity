@@ -930,11 +930,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98184018}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &110893462 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1112991365, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-  m_PrefabInstance: {fileID: 249436221}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &110954562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,7 +1899,7 @@ PrefabInstance:
       objectReference: {fileID: 444823696}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: rayLength
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: gameMaster
@@ -5739,7 +5734,7 @@ PlayableDirector:
   - key: {fileID: -3502455545968421763, guid: 1a54eb41fc7723e4cac98f612d4e6ec8, type: 2}
     value: {fileID: 1978554019}
   - key: {fileID: -6680044050677967259, guid: 1a54eb41fc7723e4cac98f612d4e6ec8, type: 2}
-    value: {fileID: 110893462}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1155127152
