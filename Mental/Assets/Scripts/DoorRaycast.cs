@@ -8,6 +8,8 @@ public class DoorRaycast : MonoBehaviour
     [SerializeField] private GM gameMaster;
     private RoomGenerator roomGenerator;
 
+    [SerializeField] private TextController textController;
+
     [SerializeField] private PickupController pickupController;
 
     [SerializeField] private int rayLength = 1;
@@ -24,6 +26,8 @@ public class DoorRaycast : MonoBehaviour
     private const string LoopDoor = "LoopDoor";
     private const string OfficeDoor = "OfficeDoor";
     private const string Pickup = "Pickup";
+    private const string Loop = "Loop";
+    private const string Escape = "Escape";
 
     [SerializeField] private GameObject pickupUI;
     private void Awake()
@@ -96,6 +100,35 @@ public class DoorRaycast : MonoBehaviour
                 }
                
             }
+            else if (hit.collider.CompareTag(Loop))
+            {
+                StartCoroutine(textController.LoopHover());
+                CrosshairChange(true);
+                if (Input.GetKeyDown(OpenDoorKey))
+                {
+                    CrosshairChange(false);
+                    gameMaster.Loop();
+                }
+
+            }
+            else if (hit.collider.CompareTag(Escape))
+            {
+                StartCoroutine(textController.EscapeHover());
+                if (!doOnce)
+                {
+                    raycastObj = hit.collider.gameObject.GetComponent<DoorController>();
+                    CrosshairChange(true);
+                }
+                CrosshairChange(true);
+                if (Input.GetKeyDown(OpenDoorKey))
+                {
+                    CrosshairChange(false);
+                    raycastObj.PlayAnimation();
+                    gameMaster.Escape();
+                }
+
+            }
+
             else
             {
                 CrosshairChange(false);
