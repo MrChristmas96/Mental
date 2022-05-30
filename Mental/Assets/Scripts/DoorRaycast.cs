@@ -8,6 +8,8 @@ public class DoorRaycast : MonoBehaviour
     [SerializeField] private GM gameMaster;
     private RoomGenerator roomGenerator;
 
+    [SerializeField] private TextController textController;
+
     [SerializeField] private PickupController pickupController;
 
     [SerializeField] private int rayLength = 1;
@@ -100,7 +102,7 @@ public class DoorRaycast : MonoBehaviour
             }
             else if (hit.collider.CompareTag(Loop))
             {
-
+                StartCoroutine(textController.LoopHover());
                 CrosshairChange(true);
                 if (Input.GetKeyDown(OpenDoorKey))
                 {
@@ -111,6 +113,7 @@ public class DoorRaycast : MonoBehaviour
             }
             else if (hit.collider.CompareTag(Escape))
             {
+                StartCoroutine(textController.EscapeHover());
                 if (!doOnce)
                 {
                     raycastObj = hit.collider.gameObject.GetComponent<DoorController>();

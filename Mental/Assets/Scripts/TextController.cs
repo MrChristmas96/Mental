@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TextController : MonoBehaviour
 {
     [SerializeField] Text textBox;
+    [SerializeField] Text textBox2;
     void Start()
     {
         textBox.text = "";
@@ -60,5 +61,19 @@ public class TextController : MonoBehaviour
         textBox.text = "It's all my fault...";
         yield return new WaitForSeconds(4f);
         textBox.text = "";
+    }
+
+    public IEnumerator LoopHover()
+    {
+        textBox2.text = "Curse yourself to walk these halls\n for all eternity...";
+        textBox.text = "There's no hope for me anymore!";
+        yield return new WaitForSeconds(3f);
+    }
+
+    public IEnumerator EscapeHover()
+    {
+        textBox2.text = "Escape this hellish place!\n Start your life anew...";
+        textBox.text = "Maybe i can still atone for my sins.";
+        yield return new WaitForSeconds(3f);
     }
 }

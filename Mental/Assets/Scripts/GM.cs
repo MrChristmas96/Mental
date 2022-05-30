@@ -57,6 +57,7 @@ public class GM : MonoBehaviour
         SceneManager.LoadScene("Hallway0");
     }
 
+
     public void Escape()
     {
         animator.Play("Fade");

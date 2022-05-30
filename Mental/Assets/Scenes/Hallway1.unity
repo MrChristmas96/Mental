@@ -16808,6 +16808,10 @@ PrefabInstance:
       propertyPath: gameMaster
       value: 
       objectReference: {fileID: 374258608}
+    - target: {fileID: 1583810892, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+      propertyPath: textController
+      value: 
+      objectReference: {fileID: 2133800423}
     - target: {fileID: 4567010864190401326, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
       propertyPath: m_Name
       value: Player 1
