@@ -3374,7 +3374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1965362198}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!320 &443659650
 PlayableDirector:
@@ -3392,7 +3392,7 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 177787708215054796, guid: 02f5893c0028ae24fb2fc1d71b943715, type: 2}
-    value: {fileID: 1112991365}
+    value: {fileID: 0}
   - key: {fileID: 7436110056011124464, guid: 02f5893c0028ae24fb2fc1d71b943715, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
@@ -4581,6 +4581,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
   m_PrefabInstance: {fileID: 710654032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &714378440 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 256203605, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
+  m_PrefabInstance: {fileID: 1112991361}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &717439028 stripped
 GameObject:
@@ -6104,7 +6109,7 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 177787708215054796, guid: 02f5893c0028ae24fb2fc1d71b943715, type: 2}
-    value: {fileID: 1112991365}
+    value: {fileID: 714378440}
   - key: {fileID: 7436110056011124464, guid: 02f5893c0028ae24fb2fc1d71b943715, type: 2}
     value: {fileID: 1788098704}
   m_ExposedReferences:
@@ -7751,11 +7756,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
---- !u!95 &1112991365 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1112991365, guid: 451bc20e25e319d42a30a65e50989c9b, type: 3}
-  m_PrefabInstance: {fileID: 1112991361}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1117061839
 GameObject:
   m_ObjectHideFlags: 0
@@ -15084,11 +15084,11 @@ Transform:
   - {fileID: 766647725}
   - {fileID: 1443117856}
   - {fileID: 55336041}
-  - {fileID: 1762480259}
   - {fileID: 443659649}
+  - {fileID: 1762480259}
   - {fileID: 1970426206}
-  - {fileID: 1425355755}
   - {fileID: 1916017995}
+  - {fileID: 1425355755}
   - {fileID: 717439029}
   m_Father: {fileID: 0}
   m_RootOrder: 6
