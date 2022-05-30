@@ -15,6 +15,8 @@ public class GM : MonoBehaviour
 
     [SerializeField] RoomGenerator roomGenerator;
 
+    [SerializeField] Animator animator;
+
     private void Awake()
     {
         pickupController = GetComponent<PickupController>();
@@ -48,5 +50,15 @@ public class GM : MonoBehaviour
             Debug.Log("Door is Locked");
         }
         
+    }
+
+    public void Loop()
+    {
+        SceneManager.LoadScene("Hallway0");
+    }
+
+    public void Escape()
+    {
+        animator.Play("Fade");
     }
 }

@@ -10,6 +10,8 @@ TagManager:
   - OfficeDoor
   - Pickup
   - PickupUI
+  - Loop
+  - Escape
   layers:
   - Default
   - TransparentFX
