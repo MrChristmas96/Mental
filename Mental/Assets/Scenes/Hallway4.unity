@@ -5961,6 +5961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 1873318290}
+  textBox2: {fileID: 0}
 --- !u!114 &1198355024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8198,7 +8199,7 @@ RectTransform:
   m_GameObject: {fileID: 1574193806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.699892, y: 5.715946, z: 6.699892}
+  m_LocalScale: {x: 4.2324557, y: 3.6108775, z: 4.2324557}
   m_Children: []
   m_Father: {fileID: 1800257244}
   m_RootOrder: 1
@@ -8228,7 +8229,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6f05cb6fff2bea94480e0d47b4159518, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72166add2286b7142a34d49c2b21730f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10078,7 +10079,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6f05cb6fff2bea94480e0d47b4159518, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10086,7 +10087,7 @@ SpriteRenderer:
   m_Size: {x: 7.68, y: 6.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!65 &1978554017
@@ -10100,8 +10101,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 14.092172, y: 7.6671677, z: 14.4605465}
-  m_Center: {x: 2.6429608, y: 0.29293382, z: -3.86991}
+  m_Size: {x: 10.260283, y: 7.6671677, z: 14.4605465}
+  m_Center: {x: 4.558908, y: 0.29293382, z: -3.8699098}
 --- !u!4 &1978554018
 Transform:
   m_ObjectHideFlags: 0

@@ -16,15 +16,15 @@ public class TextController : MonoBehaviour
     public IEnumerator KeyCard()
     {
         textBox.text = "This must be an old journal record of a patient.";
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
         textBox.text = "Looks to be a from a few years before the hospital was closed";
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4f);
         textBox.text = "";
     }
 
     public IEnumerator Paper()
     {
-        textBox.text = "Daniella... That name sounds awfully familliar";
+        textBox.text = "Daniella... Reminds me of someone i knew";
         yield return new WaitForSeconds(4f);
         textBox.text = "";
     }
@@ -33,17 +33,25 @@ public class TextController : MonoBehaviour
     {
         textBox.text = "Is that... Her?";
         yield return new WaitForSeconds(3f);
-        textBox.text = "What a terrible way to die...";
+        textBox.text = "What a terrible way to die!";
+        yield return new WaitForSeconds(3f);
+        textBox.text = "How could someone bring themself to do this!?";
+        yield return new WaitForSeconds(4f);
+        textBox.text = "I hope they rot in hell!";
         yield return new WaitForSeconds(3f);
         textBox.text = "";
     }
 
     public IEnumerator Death()
     {
-        textBox.text = "But... She can't be dead!";
+        textBox.text = "But that's the day my girlfriend died..";
+        yield return new WaitForSeconds(4f);
+        textBox.text = "I don't understand!";
         yield return new WaitForSeconds(3f);
-        textBox.text = "It must have been someone else.";
-        yield return new WaitForSeconds(3f);
+        textBox.text = "It must have been someone else!";
+        yield return new WaitForSeconds(4f);
+        textBox.text = "I would never do something like that!";
+        yield return new WaitForSeconds(4f);
         textBox.text = "";
     }
 
@@ -51,7 +59,9 @@ public class TextController : MonoBehaviour
     {
         textBox.text = "Daniella... I remember now.";
         yield return new WaitForSeconds(3f);
-        textBox.text = "That was the happiest day of my life...";
+        textBox.text = "We took this picture the same day she died...";
+        yield return new WaitForSeconds(4f);
+        textBox.text = "What have i done... Why did i do it?..";
         yield return new WaitForSeconds(4f);
         textBox.text = "";
     }
@@ -61,6 +71,8 @@ public class TextController : MonoBehaviour
         textBox.text = "It was me all along...";
         yield return new WaitForSeconds(3f);
         textBox.text = "It's all my fault...";
+        yield return new WaitForSeconds(4f);
+        textBox.text = "I have to make a choice";
         yield return new WaitForSeconds(4f);
         textBox.text = "";
     }

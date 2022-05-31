@@ -246,14 +246,14 @@ RectTransform:
   m_GameObject: {fileID: 50815226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.628212, y: 5.653865, z: 6.628212}
+  m_LocalScale: {x: 6.097955, y: 5.2015557, z: 6.097955}
   m_Children: []
   m_Father: {fileID: 1875526022}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 22}
+  m_AnchoredPosition: {x: 0, y: 45}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50815228
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 020944e2e7c8f2a4f8caccf2124c3ac2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f05cb6fff2bea94480e0d47b4159518, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11055,7 +11055,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 020944e2e7c8f2a4f8caccf2124c3ac2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f05cb6fff2bea94480e0d47b4159518, type: 3}
   m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15423,6 +15423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 2057687523}
+  textBox2: {fileID: 0}
 --- !u!1 &1937576536
 GameObject:
   m_ObjectHideFlags: 0
