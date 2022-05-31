@@ -62,6 +62,8 @@ public class TextController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         textBox.text = "It's all my fault...";
         yield return new WaitForSeconds(4f);
+        textBox.text = "What is wrong with me?";
+        yield return new WaitForSeconds(3f);
         textBox.text = "";
     }
 
