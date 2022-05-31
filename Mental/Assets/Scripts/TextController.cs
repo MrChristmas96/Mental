@@ -15,7 +15,7 @@ public class TextController : MonoBehaviour
  
     public IEnumerator KeyCard()
     {
-        textBox.text = "A Keycard! This could be useful";
+        textBox.text = "This must be an old journal record of a patient who was admitted many years ago before the hospital was closed";
         yield return new WaitForSeconds(3f);
         textBox.text = "";
     }
